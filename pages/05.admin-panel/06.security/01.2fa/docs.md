@@ -63,3 +63,9 @@ Simply set **twofa_enabled** to `false` and save. You should now be able to acce
 #### What if my 2FA secret is compromised?
 
 If you believe your 2FA secret may be compromised, you can generate a new key and invalidate the old one by selecting the big red **Regenerate** button in your user profile settings from the Admin.
+
+#### What if I login and see error "invalid 2-Factor Authentication code, please try again..."?
+
+Check the time and date on your webhost and 2FA device. If the time is off by even a minute, the 2FA code will not work. 
+Please ensure that both the server and device have matching time and date. 
+
